@@ -1,0 +1,68 @@
+body {
+    background-color: #212121;
+    color: white;
+}
+.xs{
+	width: 25px;
+	height: 25px;
+}
+.little{
+	width: 120px;
+	height: 120px;
+}
+.little2{
+	width: 200px;
+	height: 200px;
+}
+
+.medium{
+	width: 400px;
+	height: 400px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.stuff{
+	text-align: center;
+	font-size: 300%;
+	text-shadow:4px 3px 0px rgba(129, 199, 132, 0.35);
+}
+
+.jumbotron{
+	background-color: #81C784;
+	color: black;
+	font-family:  'Open Sans', sans-serif;
+}
+.jumbotron h1{
+	font-family: Franklin Gothic Medium;
+	font-style: normal; 
+	text-shadow:4px 3px 0px rgba(255, 255, 255, 0.75), 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.jumbotron hr{
+	border: 0;
+    height: 1px;
+    background: #43A047;
+    background-image: -webkit-linear-gradient(left, #81C784, #43A047, #81C784); 
+    background-image:    -moz-linear-gradient(left, #81C784, #43A047, #81C784); 
+    background-image:     -ms-linear-gradient(left, #81C784, #43A047, #81C784); 
+    background-image:      -o-linear-gradient(left, #81C784, #43A047, #81C784); 
+}
+
+.jumbotron a{
+	text-decoration: none;
+	color: white;
+}
+
+footer {
+	font-family:  'Open Sans', sans-serif;
+	font-weight: bold;
+	color: black;
+  	background-color: #81C784;
+}
+
+footer a:link{
+	text-decoration: none;
+}
