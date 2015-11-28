@@ -63,11 +63,32 @@ footer {
 	font-weight: bold;
 	color: black;
   	background-color: #81C784;
+  	min-height: 150px;
 }
 
 footer a:link{
 	text-decoration: none;
 }
+
+.scrollToTop{
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #27AE61 url("../images/arrow-up.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.scrollToTop:hover{
+	text-decoration:none;
+}
+
 /* ===========================
 --- About
 ============================ */
@@ -156,3 +177,4 @@ h5{
 #dev{
 	background-image: url("https://pbs.twimg.com/profile_banners/2967702610/1445631990/1500x500");
 }
+
