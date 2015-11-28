@@ -68,7 +68,18 @@ footer {
 
 footer a:link{
 	text-decoration: none;
+	color: black;
+	font-size: 120%;
 }
+
+footer a:visited{
+	color: black;
+}
+
+footer i{
+	color: white;
+}
+
 
 .scrollToTop{
 	display: none;
