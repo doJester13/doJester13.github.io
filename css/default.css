@@ -1,8 +1,12 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
 
+html{
+}
 body {
     background-color: #212121;
     color: white;
+    max-height: 100%;
+
 }
 .xs{
 	width: 25px;
@@ -34,7 +38,15 @@ body {
 }
 
 .jumbotron{
-	background-color: #81C784;
+	
+	background: repeating-linear-gradient(
+	  45deg,
+	  #8dcc90,
+	  #8dcc90 10px,
+	  #81C784 10px,
+	  #81C784 20px
+	);
+	
 	color: black;
 	font-family:  'Open Sans', sans-serif;
 }
@@ -62,8 +74,15 @@ footer {
 	font-family:  'Open Sans', sans-serif;
 	font-weight: bold;
 	color: black;
-  	background-color: #81C784;
+  	background: repeating-linear-gradient(
+	  45deg,
+	  #8dcc90,
+	  #8dcc90 10px,
+	  #81C784 10px,
+	  #81C784 20px
+	);
   	min-height: 150px;
+  	width: 100%;
 }
 
 footer a:link{
@@ -76,8 +95,13 @@ footer a:visited{
 	color: black;
 }
 
-footer i{
+footer a i{
 	color: white;
+	font-size: 300%
+}
+
+.carbon{
+	color: black;
 }
 
 
@@ -188,4 +212,3 @@ h5{
 #dev{
 	background-image: url("https://pbs.twimg.com/profile_banners/2967702610/1445631990/1500x500");
 }
-

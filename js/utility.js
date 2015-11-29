@@ -1,4 +1,7 @@
-var amountScrolled = $( window ).height();
+var h = $( window ).height();
+var w =  $( window ).width();
+var amountScrolled = h;
+
 $(window).scroll(function() {
 	if ( $(window).scrollTop() > amountScrolled ) {
 		$("a.scrollToTop").fadeIn('slow');
