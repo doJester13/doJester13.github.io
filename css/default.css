@@ -26,9 +26,25 @@ body {
 	height: 400px;
 }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
 .col-centered{
     float: none;
     margin: 0 auto;
+}
+
+.name{
+	display: flex;
+    align-items: center;
+}
+
+.face{
+	text-align: right;
 }
 
 .stuff{
