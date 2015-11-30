@@ -145,12 +145,12 @@ footer a i{
 --- About
 ============================ */
 .team{
-	color: #666;
+	color: rgba(255,255,255,1);
 	text-align: center;
 }
 
 .boxed-grey {
-	background: rgba(249,249,249,0.5);
+	background: rgba(255,255,255,0);	 
 	padding: 20px;
 }
 
