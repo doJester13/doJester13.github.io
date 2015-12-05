@@ -6,40 +6,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Erik Minarini</title>
+  <link rel="me"
+  href="https://twitter.com/doJester13"
+>
   <link rel="icon" 
       type="image/png" 
       href="images/e.png">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-
+  <!-- awesomefont -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+  <!-- animate -->
   <link rel="stylesheet" href="css/animate.css">
+  <!-- default -->
   <link rel="stylesheet" href="css/default.css">
+  <!-- toastr -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet"/>
 
 </head>
 <body>
 
  <div class="jumbotron animated bounceInDown">
-  <div class="container">
-    <div class="row  row-eq-height">
-      <div class ="col-md-3 col-md-offset-2 face col-xs-6">
-        <img src = "images/me.jpg" class = "img-circle img-responsive "> 
+    <div class="container">
+      <div class="row  row-eq-height">
+        <div class ="col-md-3 col-md-offset-2 face col-xs-6">
+          <img src = "images/me.jpg" class = "img-circle img-responsive "> 
+        </div>
+          <div class ="col-md-6 name col-xs-6">
+          <h1> Erik Minarini</h1>
+        </div>
       </div>
-        <div class ="col-md-6 name col-xs-6">
-        <h1> Erik Minarini</h1>
-      </div>
-    </div>
-    <div class="row">
-      <hr>
-      <div class ="col-md-8 col-centered"> 
-        <p>Hi, I'm Erik, I'm a programmer and a dreamer, I love IT and everything related to.</p>
-        <a href="https://twitter.com/doJester13"><img src = "images/twitter.png" class = "xs"> @doJester13 </a>
+      <div class="row">
+        <hr>
+        <div class ="col-md-8 col-centered"> 
+          <p>Hi, I'm Erik, I'm a programmer and a dreamer, I love IT and everything related to.</p>
+          <a href="https://twitter.com/doJester13"><img src = "images/twitter.png" class = "xs"> @doJester13 </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      <div class="modal-header">
+        <h2>Christmas</h2>
+      </div>
+        <div class="modal-body">
+            <div class="row">
+              <div id="clockdiv" class="col-md-8 col-md-offset-2">
+                <div>
+                  <span class="days"></span>
+                  <div class="smalltext">Days</div>
+                </div>
+                <div>
+                  <span class="hours"></span>
+                  <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                  <span class="minutes"></span>
+                  <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                  <span class="seconds"></span>
+                  <div class="smalltext">Seconds</div>
+                </div>
+              </div>
+              <div class="col-md-8 col-md-offset-2">
+                <a id="share" href="">SHARE</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <div class="container">
   <div class="row">
@@ -155,6 +198,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script type="text/javascript" src="js/utility.js"></script>
 </body>
 </html>

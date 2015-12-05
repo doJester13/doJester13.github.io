@@ -2,11 +2,13 @@
 
 html{
 	overflow-x:hidden; 
+	margin-right: -17px;
 }
 body {
     background-color: #212121;
     color: white;
     max-height: 100%;
+    width: 100%;
 
 }
 .xs{
@@ -222,10 +224,39 @@ h5{
     letter-spacing: 1px;
 }
 
-#alby{
-	background-image: url("https://pbs.twimg.com/profile_banners/222210228/1443352595/1500x500");
+/* ===========================
+--- ClockDiv
+============================ */
+
+.modal{
+	color: black;
+	
 }
 
-#dev{
-	background-image: url("https://pbs.twimg.com/profile_banners/2967702610/1445631990/1500x500");
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
 }
