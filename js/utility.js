@@ -85,6 +85,61 @@ function initializeClock(id, endtime){
   var timeinterval = setInterval(updateClock,1000);
 }
 
+var intervalS;
+
+	function snow (options){
+	
+			var $flake 			= $('<div class="flake" />').css({'position': 'absolute', 'top': '-50px'}).html('&#10052;'),
+				documentHeight 	= $(document).height(),
+				documentWidth	= $(document).width(),
+				defaults		= {
+									minSize		: 10,
+									maxSize		: 20,
+									newOn		: 500,
+									flakeColor	: "#FFFFFF"
+								},
+				options			= $.extend({}, defaults, options);
+				
+			
+			intervalS		= setInterval( function(){
+				var startPositionLeft 	= Math.random() * documentWidth - 100,
+				 	startOpacity		= 0.5 + Math.random(),
+					sizeFlake			= options.minSize + Math.random() * options.maxSize,
+					endPositionTop		= documentHeight - 40,
+					endPositionLeft		= startPositionLeft - 100 + Math.random() * 200,
+					durationFall		= documentHeight * 10 + Math.random() * 5000;
+				$flake
+					.clone()
+					.appendTo('body')
+					.css(
+						{
+							left: startPositionLeft,
+							opacity: startOpacity,
+							'font-size': sizeFlake,
+							color: options.flakeColor
+						}
+					)
+					.animate(
+						{
+							top: endPositionTop,
+							left: endPositionLeft,
+							opacity: 0.2
+						},
+						durationFall,
+						'linear',
+						function() {
+							$(this).remove()
+						}
+					);
+			}, options.newOn);
+	
+	};
+
+	function stopsnow(){
+		clearInterval(intervalS);
+	}
+
+
 
 var totalTime = getTimeRemaining(deadline);
 var roundDays = totalTime.days +1;
@@ -97,9 +152,15 @@ initializeClock('clockdiv', deadline);
 
 toastr.options.onclick = function() {
 	toastr.remove();
+	snow();
 	$('#myModal').modal('show');
 	$('#myModal').modal('handleUpdate');
 };
+
+$('#myModal').on('hidden.bs.modal', function () {
+	stopsnow();
+  	$('.flake').fadeOut();
+})
 
 $("#share").click(function(){
 	relativeTime = getTimeRemaining(deadline); 
