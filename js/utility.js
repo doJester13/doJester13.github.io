@@ -94,6 +94,7 @@ var url = "";
 
 initializeClock('clockdiv', deadline);
 
+
 toastr.options.onclick = function() {
 	toastr.remove();
 	$('#myModal').modal('show');
@@ -107,4 +108,4 @@ $("#share").click(function(){
 	window.location.href = url
 });
 
-toastr["info"](roundDays + " days until xmas!", "Christmas");
+toastr["info"](roundDays + " days until xmas!", "Christmas", {"iconClass": 'customer-info'});
