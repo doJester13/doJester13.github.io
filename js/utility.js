@@ -90,6 +90,7 @@ var totalTime = getTimeRemaining(deadline);
 var roundDays = totalTime.days +1;
 var relativeTime;
 var timeText = "";
+var url = "";
 
 initializeClock('clockdiv', deadline);
 
@@ -102,10 +103,8 @@ toastr.options.onclick = function() {
 $("#share").click(function(){
 	relativeTime = getTimeRemaining(deadline); 
 	timeText = "Only "+ relativeTime.days +" days, " + relativeTime.hours +" hours, " + relativeTime.minutes +" minutes and " + relativeTime.seconds +" seconds until Christmas!!!";  
-	window.location.href = "https://twitter.com/share?text="+ timeText + "&url="+ encodeURIComponent(url) + "&via=dojester13";
+	url = "https://twitter.com/share?text="+ timeText + "&url="+ encodeURIComponent(window.location.href) + "&hashtags=christmas,countdown &via=dojester13";
+	window.location.href = url
 });
 
 toastr["info"](roundDays + " days until xmas!", "Christmas");
-
-
-//"https://twitter.com/share?url="+encodeURIComponent(url)+"&via=dojester13"
