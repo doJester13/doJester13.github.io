@@ -1,7 +1,7 @@
 var h = $( window ).height();
 var w =  $( window ).width();
 var amountScrolled = h;
-var deadline = '2015-12-25';
+var deadline = '2016-12-25';
 
 $(window).scroll(function() {
 	if ( $(window).scrollTop() > amountScrolled ) {
