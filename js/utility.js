@@ -155,13 +155,13 @@ toastr.options.onclick = function() {
 	snow();
 	$('#myModal').modal('show');
 	$('#myModal').modal('handleUpdate');
-	$('#android-santa').fadeIn();
+	//$('#android-santa').fadeIn();
 };
 
 $('#myModal').on('hidden.bs.modal', function () {
 	stopsnow();
   	$('.flake').fadeOut();
-  	$('#android-santa').fadeOut();
+  	//$('#android-santa').fadeOut();
 })
 
 $("#share").click(function(){
