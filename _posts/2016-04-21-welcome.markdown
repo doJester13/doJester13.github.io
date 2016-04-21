@@ -13,7 +13,7 @@ layout: post
   <div class="container">
     <p>
     I'm Erik, Android is my work and my passion, so I've decided to write about it.
-    At now, I' don't know how often I'll post something, but I hope will happen often!
+    At now, I've don't know how often I'll post something, but I hope it will happen often!
     
     So, have a nice day, and keep follow me :) .
     </p>
