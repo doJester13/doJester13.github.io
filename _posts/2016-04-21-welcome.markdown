@@ -30,5 +30,8 @@ layout: post
       </div>
     </div>
   </div>
+  <div>
+  ![](../../../hi.gif)
+  </div>
  
 </body>
