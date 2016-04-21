@@ -21,10 +21,12 @@ layout: post
   <div class="jumbotron">
     <div class="container">
       <div class="row">
-        {% highlight Java %}
-          String bye = "Good bye friends! See you soon.";
-          Toast.makeText(getApplicationContext(), bye, Toast.LENGTH_LONG);
-        {%endhighlight%}
+        <div class="col-md-8">
+          {% highlight Java %}
+            String bye = "Good bye friends! See you soon.";
+            Toast.makeText(getApplicationContext(), bye, Toast.LENGTH_LONG);
+          {%endhighlight%}
+        </div>
       </div>
     </div>
   </div>
