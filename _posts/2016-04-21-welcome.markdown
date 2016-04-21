@@ -3,6 +3,8 @@ published: true
 title: Welcome 
 layout: post
 ---
+<body>
+
 <h1>Hi</h1>
 <p>
 I'm Erik, Android is my work and my passion, so I've decided to write about it.
@@ -15,3 +17,5 @@ So, have a nice day, and keep follow me :) .
 String bye = "Good bye friends! See you soon.";
 Toast.makeText(getApplicationContext(), bye, Toast.LENGTH_LONG);
 {%endhighlight%}
+
+</body>
