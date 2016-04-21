@@ -5,7 +5,7 @@ layout: post
 ---
 <h1>Provona</h1>
 Post di prova
-{%highlight Java%}
+{% highlight Java%}
 Fgt alby = new Fgt();
 alby.fag();
-{%endhighlight%}
+{%andhighlight%}
