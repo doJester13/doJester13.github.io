@@ -18,10 +18,10 @@ At now, I' don't know how often I'll post something, but I hope will happen ofte
 So, have a nice day, and keep follow me :) .
 </p>
 </div>
-
+<div class="jumbotron">
 {% highlight Java %}
 String bye = "Good bye friends! See you soon.";
 Toast.makeText(getApplicationContext(), bye, Toast.LENGTH_LONG);
 {%endhighlight%}
-
+</div>
 </body>
