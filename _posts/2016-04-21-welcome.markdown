@@ -1,0 +1,16 @@
+---
+published: true
+title: Welcome 
+layout: post
+---
+<h1>Hi</h1>
+<p>
+I'm Erik, Android is my work and my passion, so I've decided to write about it.
+At now, I' don't know how often I'll post something, but I hope will happen often!
+
+So, have a nice day, and keep follow me :) .
+</p>
+{% highlight Java%}
+String bye = "Good bye friends! See you soon.";
+Toast.makeText(getApplicationContext(), bye, Toast.LENGTH_LONG);
+{%andhighlight%}
