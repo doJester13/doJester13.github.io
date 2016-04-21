@@ -4,8 +4,8 @@ title: Welcome
 layout: post
 ---
 <head>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/default.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/default.css">
 </head>
 <body>
 
