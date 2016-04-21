@@ -5,3 +5,7 @@ layout: post
 ---
 <h1>Provona</h1>
 Post di prova
+{%highlight java%}
+Fit alby = new Fgt();
+alby.fag();
+{%endhighlight%}
