@@ -1,0 +1,6 @@
+---
+published: true
+title: Prova 
+layout: post
+---
+Post di prova
