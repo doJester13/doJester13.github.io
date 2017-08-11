@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 	    var mainMat = new BABYLON.StandardMaterial("ground", scene);
 	    mainMat.diffuseColor = new BABYLON.Color3(255, 255, 255);
-	    mainMat.wireframe = true;
+	    //mainMat.wireframe = true;
 
 		var loader = new BABYLON.AssetsManager(scene);
 		loader.useDefaultLoadingScreen = false;
