@@ -4,6 +4,8 @@ window.addEventListener('DOMContentLoaded', function() {
 	var engine = new BABYLON.Engine(canvas, true);
 
 	var createScene = function() {
+		BABYLON.SceneLoader.ShowLoadingScreen = false;
+
 	    var scene = new BABYLON.Scene(engine);
 
 	    var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(0, 5,-10), scene);
@@ -20,13 +22,9 @@ window.addEventListener('DOMContentLoaded', function() {
 	    mainMat.wireframe = true;
 
 		var loader = new BABYLON.AssetsManager(scene);
-
 		loader.useDefaultLoadingScreen = false;
-		engine.displayLoadingUI();
-
-		engine.loadingUIText = "Welcome";
-		engine.loadingUIBackgroundColor = "red";
 		
+
 		var android = loader.addMeshTask("android", "", "assets/", "android.obj");
 
 		android.onSuccess = function(task){
@@ -39,7 +37,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
 		loader.onFinish = function() {
 			console.log("ended");
-			engine.hideLoadingUI();
 
 	        engine.runRenderLoop(function () {
 	            scene.render();
