@@ -36,10 +36,10 @@ window.addEventListener('DOMContentLoaded', function() {
 		var loader = new BABYLON.AssetsManager(scene);
 
 		var mainMat = new BABYLON.StandardMaterial("ground", scene);
-	    mainMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
+	    mainMat.diffuseColor = new BABYLON.Color3(255, 255, 255);
 	    mainMat.wireframe = true;
 
-		var android = loader.addMeshTask("benciomerda", "", "assets/", "benciomerda.obj");
+		var android = loader.addMeshTask("android", "", "assets/", "android.obj");
 
 		android.onSuccess = function(task){
 			task.loadedMeshes.forEach(function(m) {
