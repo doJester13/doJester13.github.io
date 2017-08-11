@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	    var scene = new BABYLON.Scene(engine);
 
 	    //var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(0, 0,-5), scene);
-	    var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", 1.5, 1.5, 6, new BABYLON.Vector3(0, 0, 0), scene);
+	    var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", 1.5, 1.5, 10, new BABYLON.Vector3(0, 0, 0), scene);
 
 	    //camera.setTarget(BABYLON.Vector3.Zero());
 
