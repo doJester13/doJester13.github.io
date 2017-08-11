@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		loader.useDefaultLoadingScreen = false;
 		
 
-		var android = loader.addMeshTask("android", "", "assets/", "AAAA.obj");
+		var android = loader.addMeshTask("android", "", "assets/", "BBB.obj");
 
 		android.onSuccess = function(task){
 			task.loadedMeshes.forEach(function(m) {
@@ -44,6 +44,8 @@ window.addEventListener('DOMContentLoaded', function() {
 	        });
    		};
 	   
+	   	BABYLON.OBJFileLoader.OPTIMIZE_WITH_UV = true;
+
 	   	loader.load();
 
 	    return scene;
