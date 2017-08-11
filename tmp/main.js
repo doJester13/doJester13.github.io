@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		loader.useDefaultLoadingScreen = false;
 		
 
-		var android = loader.addMeshTask("android", "", "assets/", "androidB.obj");
+		var android = loader.addMeshTask("android", "", "assets/", "androidB1.obj");
 
 		android.onSuccess = function(task){
 			task.loadedMeshes.forEach(function(m) {
