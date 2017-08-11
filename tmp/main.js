@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	    camera.attachControl(canvas, false);
 
 	 
-	    var light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0,1,0), scene);
+	    var light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0,-1,0), scene);
 
 	    var mainMat = new BABYLON.StandardMaterial("ground", scene);
 	    mainMat.diffuseColor = new BABYLON.Color3(255, 255, 255);
