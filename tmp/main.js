@@ -11,8 +11,6 @@ window.addEventListener('DOMContentLoaded', function() {
 	    //var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(0, 0,-5), scene);
 	    var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", 1.5, 1.5, 10, new BABYLON.Vector3(0, 0, 0), scene);
 
-	    camera.maxZ = 10;
-	    camera.minZ = 10;
 	    //camera.setTarget(BABYLON.Vector3.Zero());
 
 	    camera.attachControl(canvas, false);
