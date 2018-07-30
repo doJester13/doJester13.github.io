@@ -1,4 +1,4 @@
 {"catalog":
-    [{"printName":"AAA","imgUrl":"http://dojester13.github.io/images/justscan.png","assetName":"cube"},
-     {"printName":"BBB","imgUrl":"http://dojester13.github.io/images/justscan.png","assetName":"sphere"}]
+    [{"printName":"AAA","imgUrl":"http://dojester13.github.io/images/justscan.png","description":"just a Cube","assetName":"cube"},
+     {"printName":"BBB","imgUrl":"http://dojester13.github.io/images/justscan.png","description":"just a Sphere", "assetName":"sphere"}]
 }
